@@ -3,8 +3,6 @@
 ## Overview
 This repository contains the end-to-end pipeline for training and deploying a highly specialized, localized Large Language Model (LLM) designed to troubleshoot Arch Linux terminal errors. The project fine-tunes Qwen2.5-Coder (1.5B/7B) using QLoRA and serves the resulting quantized model locally via Ollama and llama.cpp. 
 
-The primary objective is to replace generalized AI assistants with a deterministic, zero-shot terminal agent capable of providing production-ready bash solutions without conversational filler. For theoretical foundations on distributed training, model quantization, and the underlying mathematical mechanics, please refer to the file Gemini-_28.pdf.
-
 ## Architecture
 The system architecture bridges advanced Parameter-Efficient Fine-Tuning (PEFT) theory with practical local deployment constraints on a CachyOS environment.
 - **Base Model:** Qwen/Qwen2.5-Coder (1.5B or 7B).
