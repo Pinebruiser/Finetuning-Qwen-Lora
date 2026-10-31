@@ -1,7 +1,6 @@
 import html
 import json
 from pathlib import Path
-
 #paths 
 SCRIPT_DIR = Path(__file__).resolve().parent            
 PROJECT_ROOT = SCRIPT_DIR.parent                        
@@ -67,7 +66,6 @@ def main():
 
         records.append({
             "title": clean_text(question.get("title")),
-            "tags": question.get("tags") or [],
             "question": clean_text(question.get("body_markdown")),
             "answer": clean_text(answer.get("body_markdown")),
         })
